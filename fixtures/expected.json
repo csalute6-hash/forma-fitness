@@ -1,0 +1,24 @@
+{
+  "clock": "2026-10-18T04:00:00Z",
+  "timeZone": "Asia/Shanghai",
+  "weekStart": "2026-10-12",
+  "weekEnd": "2026-10-18",
+  "initial": {
+    "workoutsThisWeek": 2,
+    "weeklyGoal": 3,
+    "volumeKg": 4940,
+    "durationSeconds": 4500,
+    "benchMaxWeightKg": 40,
+    "benchMaxSetVolumeKg": 400,
+    "squatMaxWeightKg": 60,
+    "squatMaxSetVolumeKg": 480
+  },
+  "afterJ01": {
+    "workoutsThisWeek": 3,
+    "weeklyGoal": 3,
+    "volumeKg": 5680,
+    "durationSeconds": 6300,
+    "benchMaxWeightKg": 42.5,
+    "benchMaxSetVolumeKg": 400
+  }
+}

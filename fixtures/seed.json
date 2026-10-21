@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "initialized": true,
+  "preferences": {
+    "weightUnit": "kg",
+    "lengthUnit": "cm",
+    "weeklyGoal": 3
+  },
+  "exercises": [
+    {
+      "id": "ex-bench",
+      "name": "Bench Press",
+      "aliases": [
+        "bench"
+      ],
+      "muscleGroup": "Chest",
+      "equipment": "Barbell",
+      "instructions": [
+        "Lie on a bench with your feet planted.",
+        "Lower the bar with control toward your chest.",
+        "Press upward while keeping your shoulders stable."
+      ],
+      "note": "Use a comfortable range of motion. Stop if you feel pain."
+    },
+    {
+      "id": "ex-row",
+      "name": "Barbell Row",
+      "aliases": [
+        "row"
+      ],
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "instructions": [
+        "Hinge at your hips with a steady torso.",
+        "Pull the bar toward your lower ribs.",
+        "Lower the bar with control."
+      ],
+      "note": "Use a comfortable range of motion. Stop if you feel pain."
+    },
+    {
+      "id": "ex-press",
+      "name": "Overhead Press",
+      "aliases": [
+        "shoulder press"
+      ],
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "instructions": [
+        "Stand with the bar near your upper chest.",
+        "Press upward while keeping your trunk steady.",
+        "Return the bar with control."
+      ],
+      "note": "Use a comfortable range of motion. Stop if you feel pain."
+    },
+    {
+      "id": "ex-squat",
+      "name": "Back Squat",
+      "aliases": [
+        "squat"
+      ],
+      "muscleGroup": "Legs",
+      "equipment": "Barbell",
+      "instructions": [
+        "Set your feet in a comfortable stance.",
+        "Bend your hips and knees with control.",
+        "Stand up while keeping the bar balanced."
+      ],
+      "note": "Use a comfortable range of motion. Stop if you feel pain."
+    },
+    {
+      "id": "ex-rdl",
+      "name": "Romanian Deadlift",
+      "aliases": [
+        "rdl"
+      ],
+      "muscleGroup": "Legs",
+      "equipment": "Barbell",
+      "instructions": [
+        "Stand with a soft bend in your knees.",
+        "Move your hips backward while lowering the bar.",
+        "Return to standing with the bar close to your legs."
+      ],
+      "note": "Use a comfortable range of motion. Stop if you feel pain."
+    },
+    {
+      "id": "ex-lunge",
+      "name": "Dumbbell Lunge",
+      "aliases": [
+        "lunge"
+      ],
+      "muscleGroup": "Legs",
+      "equipment": "Dumbbell",
+      "instructions": [
+        "Hold the dumbbells at your sides.",
+        "Step forward and lower within a comfortable range.",
+        "Return to your starting stance with control."
+      ],
+      "note": "Use a comfortable range of motion. Stop if you feel pain."
+    },
+    {
+      "id": "ex-pushup",
+      "name": "Push-up",
+      "aliases": [
+        "pushup"
+      ],
+      "muscleGroup": "Chest",
+      "equipment": "Bodyweight",
+      "instructions": [
+        "Place your hands slightly wider than your shoulders.",
+        "Lower your body while keeping your trunk steady.",
+        "Push back to your starting position."
+      ],
+      "note": "Use a comfortable range of motion. Stop if you feel pain."
+    },
+    {
+      "id": "ex-goblet",
+      "name": "Goblet Squat",
+      "aliases": [
+        "goblet"
+      ],
+      "muscleGroup": "Legs",
+      "equipment": "Dumbbell",
+      "instructions": [
+        "Hold one dumbbell near your chest.",
+        "Lower into a comfortable squat.",
+        "Stand up with control."
+      ],
+      "note": "Use a comfortable range of motion. Stop if you feel pain."
+    },
+    {
+      "id": "ex-deadbug",
+      "name": "Dead Bug",
+      "aliases": [
+        "deadbug"
+      ],
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "instructions": [
+        "Lie on your back with your arms and legs raised.",
+        "Extend opposite arm and leg within a comfortable range.",
+        "Return and alternate sides with control."
+      ],
+      "note": "Use a comfortable range of motion. Stop if you feel pain."
+    }
+  ],
+  "plans": [
+    {
+      "id": "plan-upper",
+      "name": "Upper Body A",
+      "description": "A focused strength session with clear set targets.",
+      "isTemplate": true,
+      "days": [
+        "Mon",
+        "Thu"
+      ],
+      "exercises": [
+        {
+          "id": "plan-upper-e1",
+          "exerciseId": "ex-bench",
+          "targetSets": 3,
+          "targetReps": 10,
+          "targetWeightKg": 40,
+          "restSeconds": 90
+        },
+        {
+          "id": "plan-upper-e2",
+          "exerciseId": "ex-row",
+          "targetSets": 3,
+          "targetReps": 12,
+          "targetWeightKg": 30,
+          "restSeconds": 90
+        },
+        {
+          "id": "plan-upper-e3",
+          "exerciseId": "ex-press",
+          "targetSets": 2,
+          "targetReps": 10,
+          "targetWeightKg": 20,
+          "restSeconds": 90
+        }
+      ]
+    },
+    {
+      "id": "plan-lower",
+      "name": "Lower Body A",
+      "description": "A focused strength session with clear set targets.",
+      "isTemplate": true,
+      "days": [
+        "Tue",
+        "Fri"
+      ],
+      "exercises": [
+        {
+          "id": "plan-lower-e1",
+          "exerciseId": "ex-squat",
+          "targetSets": 3,
+          "targetReps": 8,
+          "targetWeightKg": 60,
+          "restSeconds": 90
+        },
+        {
+          "id": "plan-lower-e2",
+          "exerciseId": "ex-rdl",
+          "targetSets": 2,
+          "targetReps": 10,
+          "targetWeightKg": 50,
+          "restSeconds": 90
+        },
+        {
+          "id": "plan-lower-e3",
+          "exerciseId": "ex-lunge",
+          "targetSets": 2,
+          "targetReps": 10,
+          "targetWeightKg": 22,
+          "restSeconds": 90
+        }
+      ]
+    },
+    {
+      "id": "plan-full",
+      "name": "Full Body Basics",
+      "description": "A focused strength session with clear set targets.",
+      "isTemplate": true,
+      "days": [
+        "Wed",
+        "Sat"
+      ],
+      "exercises": [
+        {
+          "id": "plan-full-e1",
+          "exerciseId": "ex-pushup",
+          "targetSets": 3,
+          "targetReps": 8,
+          "targetWeightKg": 0,
+          "restSeconds": 90
+        },
+        {
+          "id": "plan-full-e2",
+          "exerciseId": "ex-goblet",
+          "targetSets": 3,
+          "targetReps": 10,
+          "targetWeightKg": 16,
+          "restSeconds": 90
+        },
+        {
+          "id": "plan-full-e3",
+          "exerciseId": "ex-row",
+          "targetSets": 3,
+          "targetReps": 10,
+          "targetWeightKg": 20,
+          "restSeconds": 90
+        },
+        {
+          "id": "plan-full-e4",
+          "exerciseId": "ex-deadbug",
+          "targetSets": 2,
+          "targetReps": 10,
+          "targetWeightKg": 0,
+          "restSeconds": 90
+        }
+      ]
+    }
+  ],
+  "activePlanId": "plan-upper",
+  "activeWorkout": null,
+  "workouts": [
+    {
+      "id": "workout-upper-001",
+      "name": "Upper Body A",
+      "sourcePlanId": "plan-upper",
+      "startedAt": "2026-10-13T10:00:00Z",
+      "completedAt": "2026-10-13T10:35:00Z",
+      "completedLocalDate": "2026-10-13",
+      "timeZone": "Asia/Shanghai",
+      "exercises": [
+        {
+          "id": "workout-upper-001-e1",
+          "exerciseId": "ex-bench",
+          "name": "Bench Press",
+          "muscleGroup": "Chest",
+          "equipment": "Barbell",
+          "restSeconds": 90,
+          "sets": [
+            {
+              "id": "workout-upper-001-e1-s1",
+              "weightKg": 40,
+              "reps": 10,
+              "completed": true
+            },
+            {
+              "id": "workout-upper-001-e1-s2",
+              "weightKg": 40,
+              "reps": 10,
+              "completed": true
+            }
+          ]
+        },
+        {
+          "id": "workout-upper-001-e2",
+          "exerciseId": "ex-row",
+          "name": "Barbell Row",
+          "muscleGroup": "Back",
+          "equipment": "Barbell",
+          "restSeconds": 90,
+          "sets": [
+            {
+              "id": "workout-upper-001-e2-s1",
+              "weightKg": 30,
+              "reps": 12,
+              "completed": true
+            },
+            {
+              "id": "workout-upper-001-e2-s2",
+              "weightKg": 30,
+              "reps": 12,
+              "completed": true
+            },
+            {
+              "id": "workout-upper-001-e2-s3",
+              "weightKg": 30,
+              "reps": 12,
+              "completed": true
+            }
+          ]
+        },
+        {
+          "id": "workout-upper-001-e3",
+          "exerciseId": "ex-press",
+          "name": "Overhead Press",
+          "muscleGroup": "Shoulders",
+          "equipment": "Barbell",
+          "restSeconds": 90,
+          "sets": [
+            {
+              "id": "workout-upper-001-e3-s1",
+              "weightKg": 20,
+              "reps": 10,
+              "completed": true
+            },
+            {
+              "id": "workout-upper-001-e3-s2",
+              "weightKg": 20,
+              "reps": 10,
+              "completed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workout-lower-001",
+      "name": "Lower Body A",
+      "sourcePlanId": "plan-lower",
+      "startedAt": "2026-10-16T10:00:00Z",
+      "completedAt": "2026-10-16T10:40:00Z",
+      "completedLocalDate": "2026-10-16",
+      "timeZone": "Asia/Shanghai",
+      "exercises": [
+        {
+          "id": "workout-lower-001-e1",
+          "exerciseId": "ex-squat",
+          "name": "Back Squat",
+          "muscleGroup": "Legs",
+          "equipment": "Barbell",
+          "restSeconds": 90,
+          "sets": [
+            {
+              "id": "workout-lower-001-e1-s1",
+              "weightKg": 60,
+              "reps": 8,
+              "completed": true
+            },
+            {
+              "id": "workout-lower-001-e1-s2",
+              "weightKg": 60,
+              "reps": 8,
+              "completed": true
+            },
+            {
+              "id": "workout-lower-001-e1-s3",
+              "weightKg": 60,
+              "reps": 8,
+              "completed": true
+            }
+          ]
+        },
+        {
+          "id": "workout-lower-001-e2",
+          "exerciseId": "ex-rdl",
+          "name": "Romanian Deadlift",
+          "muscleGroup": "Legs",
+          "equipment": "Barbell",
+          "restSeconds": 90,
+          "sets": [
+            {
+              "id": "workout-lower-001-e2-s1",
+              "weightKg": 50,
+              "reps": 10,
+              "completed": true
+            },
+            {
+              "id": "workout-lower-001-e2-s2",
+              "weightKg": 50,
+              "reps": 10,
+              "completed": true
+            }
+          ]
+        },
+        {
+          "id": "workout-lower-001-e3",
+          "exerciseId": "ex-lunge",
+          "name": "Dumbbell Lunge",
+          "muscleGroup": "Legs",
+          "equipment": "Dumbbell",
+          "restSeconds": 90,
+          "sets": [
+            {
+              "id": "workout-lower-001-e3-s1",
+              "weightKg": 22,
+              "reps": 10,
+              "completed": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bodyWeights": [
+    {
+      "id": "body-001",
+      "date": "2026-10-12",
+      "weightKg": 72.5
+    },
+    {
+      "id": "body-002",
+      "date": "2026-10-16",
+      "weightKg": 72.2
+    }
+  ]
+}
