@@ -66,3 +66,8 @@ If browser storage is blocked, full, corrupt, or from an unsupported schema, the
 - `docs/`, `fixtures/`, `templates/`: original requirements and acceptance material.
 
 Dependencies have one role each: React renders views; React Router handles SPA routes; Zod validates all stored/imported entities; Lucide provides local SVG icons. Vite builds; TypeScript/ESLint check; Vitest/Testing Library/Playwright/axe/Lighthouse verify; Prettier formats. No paid dependency is needed.
+# Live deployment
+
+FORMA is available at [csalute6-hash.github.io/forma-fitness](https://csalute6-hash.github.io/forma-fitness/).
+Pushes to `main` deploy through `.github/workflows/pages.yml`. Training data stays in the current browser; it is not synchronized between devices. Direct application routes use the Pages `404.html` fallback and render the app while retaining HTTP 404.
+

@@ -1,0 +1,20 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+forma_runtime="$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies"
+if ! command -v node >/dev/null 2>&1 && [ -x "$forma_runtime/node/bin/node" ]; then
+  PATH="$forma_runtime/node/bin:$PATH"
+  export PATH
+fi
+if command -v pnpm >/dev/null 2>&1; then
+  forma_pnpm="$(command -v pnpm)"
+elif [ -x "$forma_runtime/bin/fallback/pnpm" ]; then
+  forma_pnpm="$forma_runtime/bin/fallback/pnpm"
+else
+  echo 'Install Node.js 22+ and pnpm 11.25.0, then run pnpm install --frozen-lockfile.' >&2
+  exit 1
+fi
+if [ "${1:-dev}" = install ]; then
+  exec "$forma_pnpm" install --frozen-lockfile
+fi
+exec "$forma_pnpm" run "${1:-dev}"

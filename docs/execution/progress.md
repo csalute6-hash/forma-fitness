@@ -37,3 +37,10 @@ Current task: FORMA local MVP; final verification and evidence collection.
 - Initial pnpm script attempts failed due to its automatic dependency-status/install behavior and restricted registry access. Direct local entry points succeeded. Initial Vitest discovery included nested copies; final runs exclude `forma-studio` and `.pnpm-store` and cover only the intended root application.
 - Workflow review: main push/manual trigger, pinned actions and pnpm, lockfile install, Pages permissions/environment, base path from configure-pages, 404 SPA fallback. Built HTML references `/forma-fitness/assets/` correctly. Deep-link fallback retains GitHub Pages HTTP 404 semantics.
 - Publication scope: root FORMA application and supporting build/test files; nested `forma-studio`, installed dependencies, package cache, personal files and local test outputs are excluded. Overall product acceptance remains PARTIAL for the previously recorded manual checks.
+
+### GitHub Pages deployment completed
+- User explicitly approved a Public repository and Pages publication. Created `https://github.com/csalute6-hash/forma-fitness`, then uploaded the root app, fixtures, documentation and build/test configuration (62 files) through GitHub Git-object APIs.
+- Published commit: `7b8ec2e3a833a47ac802d1cca6798f032e55977f`. First run failed at Configure Pages because Pages was disabled; enabled GitHub Actions source in repository settings and reran the failed job.
+- Run `39542106646`, attempt 2, deploy job `119032846191`: every step succeeded, including frozen-lockfile dependency install, build, artifact upload and deployment. Environment URL: `https://csalute6-hash.github.io/forma-fitness/`.
+- Online checks: root HTTP 200; served index and CSS byte-identical to the local production build; `/plans` serves the identical SPA fallback with HTTP 404 as expected. Native Chrome visibly renders Dashboard, navigation to Plans and browser refresh on `/forma-fitness/plans` succeed. Opened live preview in a separate Chrome window.
+- This deployment result does not supersede the outstanding manual product acceptance checks.

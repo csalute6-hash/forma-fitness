@@ -1,5 +1,5 @@
 # Current task — FORMA local MVP
-Status: BLOCKED (GitHub Pages public repository visibility confirmation; manual final acceptance remains outstanding)
+Status: GitHub Pages DEPLOYED; product acceptance remains PARTIAL (manual final acceptance outstanding)
 Requirements: all 36 catalog P0 entries.
 Candidate: `9442ba34b3d9916fe3fa807cd106a20aeea76a32b3e4debe80cc49be2a44795e`; lock and per-file hashes in `evidence/candidate-hashes.json`.
 Observed: initial harness had no application or Git repository; preserved original fixtures and requirements.
